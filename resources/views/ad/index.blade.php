@@ -44,7 +44,7 @@
                         <div class="box-content layout">
                             <span class="item">Država: {{ $ad->country }}</span>
                             <span class="item">Objavio: {{ $ad->user->name }}</span>
-                            <span class="item">Broj prijava: {{ $ad->getForms($ad->id)->count() }}</span>
+                            <span class="item">Broj prijava: {{ $ad->forms()->count() }}</span>
                             <span class="item">Stanje: <span style="color: {{ $ad->deleted_at ? "red" : "green" }}">{{ $ad->deleted_at ? "zatvoren" : "aktivan"}}</span></span>
                         </div>
                     </a>

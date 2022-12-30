@@ -19,11 +19,6 @@ class Ad extends Model
         return route('ads.show', $this->url);
     }
 
-    public function getForms($id)
-    {
-        return Form::latest()->where("ad_id", $id)->get();
-    }
-
     public static function makeUrl()
     {
         $url = Str::random(30);
