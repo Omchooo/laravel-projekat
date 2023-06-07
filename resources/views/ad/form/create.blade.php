@@ -86,7 +86,7 @@
                     </div>
 
                     <div class="form-inputs layout">
-                        <div class="input-name">Biografija* <span class="docs">.txt, .pdf, .xdoc</span></div>
+                        <div class="input-name">Biografija* <span class="docs">.txt, .pdf, .docx</span></div>
                         <input class="form-upload" type="file" name="file" id="file">
                          @error('file')
                             <div>{{ $message }}</div>

@@ -37,7 +37,7 @@ class FormsRequest extends FormRequest
             'phone' => 'required',
             'address' => 'nullable',
             'bio' => 'nullable',
-            'file' => 'required|mimes:csv,txt,pdf,docx,doc|max:5000'
+            'file' => 'required|mimes:txt,pdf,docx,doc|max:5000'
         ];
     }
 

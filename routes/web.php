@@ -28,8 +28,6 @@ Route::post('/ads', [AdController::class, 'store'])->name('ads.store');
 Route::delete('/ads/{ad}/delete', [AdController::class, 'destroy'])->name('ads.destroy');
 Route::delete('/ads/{ad}/restore', [AdController::class, 'restore'])->name('ads.restore');
 Route::delete('/ads/{ad}/force-delete', [AdController::class, 'forceDelete'])->name('ads.force-delete');
-Route::get('/companies/create', [CompanyController::class, 'create'])->name('companies.create');
-// Route::post('/companies', [CompanyController::class, 'store'])->name('companies.store');
 
 
 // Route::get('/', [FormController::class, 'index'])->name('forms.index');
@@ -45,5 +43,5 @@ Route::post('/forms/{ad}/store', [FormController::class, 'store'])->name('forms.
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 

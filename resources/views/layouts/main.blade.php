@@ -26,6 +26,9 @@
                     <div class="btns layout">
                         <a href="{{ url('/login') }}"> Login </a>
                     </div>
+                    <div class="btns layout">
+                        <a href="{{ url('/register') }}"> Registracija </a>
+                    </div>
                 @else
                     <div class="btns layout">
                         <a href="{{ route('logout') }}"

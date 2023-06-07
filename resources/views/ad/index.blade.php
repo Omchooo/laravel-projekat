@@ -7,9 +7,7 @@
         <div class="main">
             <div class="main-btns layout">
                 <div class="left-btns layout">
-                    @if (Auth::user()->isAdmin())
-                        <a href="{{ route('companies.create') }}" class="btns bg-y layout"> Novi klijent </a>
-                    @else
+                    @if (!Auth::user()->isAdmin())
                         <a href="{{ route('ads.create') }}" class="btns bg-y layout"> Novi oglas </a>
                     @endif
                 </div>
